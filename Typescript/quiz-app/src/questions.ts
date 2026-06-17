@@ -1,0 +1,92 @@
+// ─────────────────────────────────────────────────────────
+// questions.ts
+// The question bank. Swap or add entries here to change the
+// quiz content without touching any logic.
+// ─────────────────────────────────────────────────────────
+
+const QUESTIONS: Question[] = [
+  {
+    id: 1,
+    category: "Geography",
+    prompt: "What is the smallest country in the world by area?",
+    choices: ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+    correctIndex: 1,
+  },
+  {
+    id: 2,
+    category: "Science",
+    prompt: "Which planet is known as the Red Planet?",
+    choices: ["Venus", "Mars", "Jupiter", "Saturn"],
+    correctIndex: 1,
+  },
+  {
+    id: 3,
+    category: "History",
+    prompt: "In which year did World War II end?",
+    choices: ["1943", "1944", "1945", "1946"],
+    correctIndex: 2,
+  },
+  {
+    id: 4,
+    category: "Pop Culture",
+    prompt: "Which artist released the album '1989'?",
+    choices: ["Adele", "Taylor Swift", "Beyoncé", "Ariana Grande"],
+    correctIndex: 1,
+  },
+  {
+    id: 5,
+    category: "Math",
+    prompt: "What is the value of pi, rounded to two decimal places?",
+    choices: ["3.12", "3.14", "3.16", "3.18"],
+    correctIndex: 1,
+  },
+  {
+    id: 6,
+    category: "Geography",
+    prompt: "Which river is traditionally cited as the longest in the world?",
+    choices: ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    correctIndex: 1,
+  },
+  {
+    id: 7,
+    category: "Science",
+    prompt: "What gas do plants primarily absorb for photosynthesis?",
+    choices: ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+    correctIndex: 2,
+  },
+  {
+    id: 8,
+    category: "History",
+    prompt: "Who was the first President of the United States?",
+    choices: ["Thomas Jefferson", "John Adams", "George Washington", "Benjamin Franklin"],
+    correctIndex: 2,
+  },
+  {
+    id: 9,
+    category: "Pop Culture",
+    prompt: "Which streaming service produced 'Stranger Things'?",
+    choices: ["Hulu", "Netflix", "Amazon Prime", "Disney+"],
+    correctIndex: 1,
+  },
+  {
+    id: 10,
+    category: "Sports",
+    prompt: "How many players does a standard soccer team have on the field at once?",
+    choices: ["9", "10", "11", "12"],
+    correctIndex: 2,
+  },
+  {
+    id: 11,
+    category: "Literature",
+    prompt: "Who wrote 'Romeo and Juliet'?",
+    choices: ["Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen"],
+    correctIndex: 1,
+  },
+  {
+    id: 12,
+    category: "Tech",
+    prompt: "What does 'CPU' stand for?",
+    choices: ["Central Process Unit", "Central Processing Unit", "Computer Personal Unit", "Central Processor Utility"],
+    correctIndex: 1,
+  },
+];

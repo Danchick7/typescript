@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pop Quiz — General Trivia</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="paper">
+    <header class="sheet-header">
+      <div class="stamp-title">Pop Quiz</div>
+      <div class="header-line">General Trivia &middot; 12 questions &middot; 15 seconds each</div>
+    </header>
+
+    <main>
+      <section id="start-screen" class="screen">
+        <p class="instructions">
+          Read each question carefully. You have <strong>15 seconds</strong> per question —
+          when time's up, it's marked wrong, just like the real thing. Fill in your answer
+          by clicking a bubble.
+        </p>
+        <button id="start-button" class="btn-primary">Begin Quiz</button>
+      </section>
+
+      <section id="quiz-screen" class="screen hidden">
+        <div class="quiz-toolbar">
+          <div class="progress-dots" id="progress-dots"></div>
+          <div class="timer-wrap">
+            <svg class="timer-ring" viewBox="0 0 60 60">
+              <circle class="timer-ring-bg" cx="30" cy="30" r="26"></circle>
+              <circle class="timer-ring-progress" id="timer-ring-progress" cx="30" cy="30" r="26"></circle>
+            </svg>
+            <span class="timer-label" id="timer-label">15</span>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <div class="question-meta">
+            <span class="category-tag" id="category-label">Category</span>
+            <span class="question-counter" id="question-counter">Question 1 of 12</span>
+          </div>
+          <h2 class="question-prompt" id="question-prompt">Question text goes here</h2>
+          <div class="choices" id="choices"></div>
+        </div>
+      </section>
+
+      <section id="result-screen" class="screen hidden">
+        <div class="result-stamp-wrap">
+          <div class="score-stamp" id="score-stamp">0/0</div>
+        </div>
+        <p class="score-message" id="score-message"></p>
+        <button id="retry-button" class="btn-primary">Retake Quiz</button>
+      </section>
+    </main>
+  </div>
+
+  <script src="dist/types.js"></script>
+  <script src="dist/questions.js"></script>
+  <script src="dist/timer.js"></script>
+  <script src="dist/engine.js"></script>
+  <script src="dist/ui.js"></script>
+  <script src="dist/main.js"></script>
+</body>
+</html>
