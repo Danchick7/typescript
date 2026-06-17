@@ -1,10 +1,3 @@
-"use strict";
-// ─────────────────────────────────────────────────────────
-// timer.ts
-// A small countdown timer. It doesn't know anything about
-// quizzes — it just counts down and reports progress, which
-// keeps it easy to reuse or unit test on its own.
-// ─────────────────────────────────────────────────────────
 class Timer {
     constructor(durationMs, onTick, onExpire) {
         this.durationMs = durationMs;
@@ -40,4 +33,3 @@ class Timer {
         return this.durationMs - this.remainingMs;
     }
 }
-//# sourceMappingURL=timer.js.map

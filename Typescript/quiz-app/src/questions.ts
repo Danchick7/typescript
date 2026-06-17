@@ -1,9 +1,3 @@
-// ─────────────────────────────────────────────────────────
-// questions.ts
-// The question bank. Swap or add entries here to change the
-// quiz content without touching any logic.
-// ─────────────────────────────────────────────────────────
-
 const QUESTIONS: Question[] = [
   {
     id: 1,

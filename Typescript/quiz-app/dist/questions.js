@@ -1,9 +1,3 @@
-"use strict";
-// ─────────────────────────────────────────────────────────
-// questions.ts
-// The question bank. Swap or add entries here to change the
-// quiz content without touching any logic.
-// ─────────────────────────────────────────────────────────
 const QUESTIONS = [
     {
         id: 1,
@@ -90,4 +84,3 @@ const QUESTIONS = [
         correctIndex: 1,
     },
 ];
-//# sourceMappingURL=questions.js.map

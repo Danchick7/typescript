@@ -1,10 +1,3 @@
-// ─────────────────────────────────────────────────────────
-// timer.ts
-// A small countdown timer. It doesn't know anything about
-// quizzes — it just counts down and reports progress, which
-// keeps it easy to reuse or unit test on its own.
-// ─────────────────────────────────────────────────────────
-
 class Timer {
   private remainingMs: number;
   private intervalId: number | null = null;

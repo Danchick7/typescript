@@ -1,12 +1,3 @@
-"use strict";
-// ─────────────────────────────────────────────────────────
-// engine.ts
-// All quiz state and scoring logic lives here, with zero
-// knowledge of the DOM. That separation means this class
-// could power a console quiz, a test suite, or a different
-// UI entirely without any changes.
-// ─────────────────────────────────────────────────────────
-/** Fisher–Yates shuffle. Generic so it works for any array type. */
 function shuffle(items) {
     const copy = items.slice();
     for (let i = copy.length - 1; i > 0; i--) {
@@ -39,7 +30,6 @@ class QuizEngine {
     get isFinished() {
         return this.state === QuizState.Finished;
     }
-    /** Records an answer for the current question and returns the resulting record. */
     submitAnswer(selectedIndex, timeTakenMs) {
         const question = this.current;
         const isCorrect = selectedIndex !== null && selectedIndex === question.correctIndex;
@@ -52,7 +42,6 @@ class QuizEngine {
         this.answers.push(record);
         return record;
     }
-    /** Moves to the next question. Returns false (and marks the quiz finished) if there isn't one. */
     advance() {
         if (this.currentIndex < this.questions.length - 1) {
             this.currentIndex++;
@@ -69,9 +58,7 @@ class QuizEngine {
             answers: this.answers,
         };
     }
-    /** One boolean per question: true if it's already been answered. Used for the progress dots. */
     getProgressDots() {
         return this.questions.map((_, i) => i < this.answers.length);
     }
 }
-//# sourceMappingURL=engine.js.map

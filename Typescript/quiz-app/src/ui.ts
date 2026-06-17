@@ -1,10 +1,3 @@
-// ─────────────────────────────────────────────────────────
-// ui.ts
-// Everything that touches the DOM lives here. It reads state
-// from QuizEngine and renders it; the engine never reaches
-// back into the UI.
-// ─────────────────────────────────────────────────────────
-
 class QuizUI {
   private readonly engine: QuizEngine;
   private timer: Timer | null = null;

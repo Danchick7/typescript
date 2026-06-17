@@ -1,10 +1,3 @@
-"use strict";
-// ─────────────────────────────────────────────────────────
-// ui.ts
-// Everything that touches the DOM lives here. It reads state
-// from QuizEngine and renders it; the engine never reaches
-// back into the UI.
-// ─────────────────────────────────────────────────────────
 class QuizUI {
     constructor(engine) {
         this.timer = null;
@@ -148,4 +141,3 @@ class QuizUI {
         return "Keep practicing — you've got this.";
     }
 }
-//# sourceMappingURL=ui.js.map
